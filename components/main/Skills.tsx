@@ -6,7 +6,7 @@ import SkillText from '../sub/SkillText'
 const Skills = () => {
   return (
     <section
-      className='flex flex-col items-center justify-center gap-2 h-full relative px-10'
+      className='flex flex-col items-center justify-center gap-2 h-full relative py-20 px-10'
       id="skills"
     >
       <SkillText />

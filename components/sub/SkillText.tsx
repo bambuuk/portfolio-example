@@ -1,6 +1,6 @@
 'use client';
 
-import { slideInFromLeft, slideInFromRight, slideInFromTop } from '@/utils/motion';
+import { slideInFromLeft } from '@/utils/motion';
 import { SparklesIcon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
 
