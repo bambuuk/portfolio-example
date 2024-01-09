@@ -40,7 +40,7 @@ const HeroContent = () => {
 
         <motion.a
           variants={slideInFromLeft(1)}
-          className='p-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]'
+          className='py-2 px-3 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]'
         >
           Learn More!
         </motion.a>
