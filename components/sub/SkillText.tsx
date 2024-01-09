@@ -12,7 +12,7 @@ const SkillText = () => {
       animate='visible'
     >
       <motion.div
-        variants={slideInFromTop}
+        variants={slideInFromLeft(0.2)}
         className='Welcome-box py-[15px] px-[10px] border border-[#7042f88b] opacity-[0.9]'
       >
         <SparklesIcon className='text-[#b49bff] mr-[10px] h-5 w-5' />
@@ -21,14 +21,14 @@ const SkillText = () => {
 
       <motion.div
         variants={slideInFromLeft(0.5)}
-        className='text-[30px] text-white font-medium mt-[10px] text-center mb-[15px]'
+        className='text-[30px] text-white font-medium mt-[10px] mb-[10px] text-center'
       >
         Making app with modern technologies
       </motion.div>
 
       <motion.div
         variants={slideInFromLeft(0.8)}
-        className='cursive text-[20px] text-gray-200 mb-10 mt-[10px] text-center'
+        className='cursive text-[20px] text-gray-200 mb-8 mt-[10px] text-center'
       >
         Never miss a task deadline or idea
       </motion.div>
