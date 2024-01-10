@@ -1,12 +1,13 @@
 import Image from 'next/image';
-import { RxHamburgerMenu } from "react-icons/rx";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
 import Link from 'next/link';
+import Sidebar from '../sub/Sidebar';
 
 const Header = () => {
   return (
     <header
-      className='w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10'
+      className='w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 lg:px-10'
     >
       <div className='w-full h-full flex flex-row items-center justify-between m-auto px-[10px]'>
         <a href='#about-me' className='h-auto w-auto flex flex-row items-center'>
@@ -43,12 +44,14 @@ const Header = () => {
               className="text-[24px] text-white lg:hover:text-[#971bc8] transition-all"
             />
           </Link>
+          <Link href="mailto:ivan.korobka.work@gmail.com">
+            <IoIosMail
+              className="text-[24px] text-white lg:hover:text-[#971bc8] transition-all border border-white rounded-lg"
+            />
+          </Link>
         </div>
 
-        <RxHamburgerMenu
-          color="white"
-          className="text-3xl block lg:hidden"
-        />
+        <Sidebar />
       </div>
     </header>
   )

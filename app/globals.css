@@ -84,3 +84,7 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #482b8d;
 }
+
+.no-scroll {
+  overflow-y: hidden;
+}
