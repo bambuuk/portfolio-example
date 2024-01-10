@@ -64,3 +64,23 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 17px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #180c33;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #482b8d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #482b8d;
+}
