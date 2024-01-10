@@ -6,55 +6,13 @@ import SkillText from '../sub/SkillText'
 const Skills = () => {
   return (
     <section
-      className='flex flex-col items-center justify-center gap-2 h-full relative py-20 px-10'
+      className='flex flex-col items-center justify-center gap-2 h-full relative py-20 px-[15px] sm:px-10'
       id="skills"
     >
       <SkillText />
       <div className='flex flex-row justify-around flex-wrap mt-4 gap-5 items-center'>
         {
           Frontend_skill.map((image, index) => (
-            <SkillDataProvider
-              key={index}
-              src={image.Image}
-              width={image.width}
-              height={image.height}
-              index={index}
-            />
-          ))
-        }
-      </div>
-
-      <div className='flex flex-row justify-around flex-wrap mt-4 gap-5 items-center'>
-        {
-          Backend_skill.map((image, index) => (
-            <SkillDataProvider
-              key={index}
-              src={image.Image}
-              width={image.width}
-              height={image.height}
-              index={index}
-            />
-          ))
-        }
-      </div>
-
-      <div className='flex flex-row justify-around flex-wrap mt-4 gap-5 items-center'>
-        {
-          Full_stack.map((image, index) => (
-            <SkillDataProvider
-              key={index}
-              src={image.Image}
-              width={image.width}
-              height={image.height}
-              index={index}
-            />
-          ))
-        }
-      </div>
-
-      <div className='flex flex-row justify-around flex-wrap mt-4 gap-5 items-center'>
-        {
-          Other_skill.map((image, index) => (
             <SkillDataProvider
               key={index}
               src={image.Image}

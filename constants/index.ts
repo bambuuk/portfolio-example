@@ -114,14 +114,8 @@ export const Frontend_skill = [
     height: 65,
   },
   {
-    skill_name: "Tailwind Css",
-    Image: "/tailwind.png",
-    width: 65,
-    height: 65,
-  },
-  {
-    skill_name: "Material UI",
-    Image: "/mui.png",
+    skill_name: "Type Script",
+    Image: "/ts.png",
     width: 65,
     height: 65,
   },
@@ -144,16 +138,34 @@ export const Frontend_skill = [
     height: 65,
   },
   {
-    skill_name: "Type Script",
-    Image: "/ts.png",
+    skill_name: "Next js",
+    Image: "/next.png",
     width: 65,
     height: 65,
   },
   {
-    skill_name: "Next js 13",
-    Image: "/next.png",
+    skill_name: "Tailwind Css",
+    Image: "/tailwind.png",
     width: 65,
     height: 65,
+  },
+  {
+    skill_name: "Material UI",
+    Image: "/mui.png",
+    width: 65,
+    height: 65,
+  },
+  {
+    skill_name: "Styled components",
+    Image: "/styled-components-1.svg",
+    width: 65,
+    height: 65,
+  },
+  {
+    skill_name: "Figma",
+    Image: "/figma.png",
+    width: 40,
+    height: 40,
   },
 ];
 
