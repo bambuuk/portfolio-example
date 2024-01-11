@@ -1,4 +1,4 @@
-import { Backend_skill, Frontend_skill, Full_stack, Other_skill } from '@/constants'
+import { Frontend_skill } from '@/constants'
 import React from 'react'
 import SkillDataProvider from '../sub/SkillDataProvider'
 import SkillText from '../sub/SkillText'

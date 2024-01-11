@@ -1,15 +1,21 @@
 'use client';
 
-import { slideInFromTop } from '@/utils/motion';
+import { slideInFromLeft, slideInFromTop } from '@/utils/motion';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const Encryption = () => {
   return (
-    <section className='flex flex-row relative items-center justify-center w-full min-h-screen h-full'>
-      <div className='absolute w-auto h-auto top-[20%] sm:top-[15%] md:top-[10%] z-[5]'>
-        <motion.div
-          variants={slideInFromTop}
+    <motion.section
+      initial="hidden"
+      animate="visible"
+      variants={slideInFromLeft(0.5)}
+      className='flex flex-row relative items-center justify-center w-full min-h-screen h-full'
+    >
+      <motion.div
+        className='absolute w-auto h-auto top-[20%] sm:top-[15%] md:top-[10%] z-[5]'
+      >
+        <div
           className='text-[25px] sm:text-[40px] font-medium text-center text-gray-200'
         >
           Performance
@@ -18,10 +24,12 @@ const Encryption = () => {
             &{" "}
           </span>
           Security
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
 
-      <div className='w-full h-full flex items-start justify-center absolute top-[50%] translate-y-[-50%]'>
+      <motion.div
+        className='w-full h-full flex items-start justify-center absolute top-[50%] translate-y-[-50%]'
+      >
         <video
           loop
           muted
@@ -31,8 +39,11 @@ const Encryption = () => {
           className='w-full h-full bg-transparent'
           src="/encryption.webm"
         />
-      </div>
-      <div className="flex flex-col items-center justify-center top-[50%] translate-y-[-50%] absolute z-[20] w-auto h-auto">
+      </motion.div>
+
+      <motion.div
+        className="flex flex-col items-center justify-center top-[50%] translate-y-[-50%] absolute z-[20] w-auto h-auto"
+      >
         <div className="flex flex-col items-center group cursor-pointer w-auto h-auto">
           <Image
             src="/LockTop.png"
@@ -53,15 +64,17 @@ const Encryption = () => {
         <div className="Welcome-box px-[15px] py-[4px] z-[20] brder my-[20px] border-[#7042f88b] opacity-[0.9]">
           <h1 className="Welcome-text text-[12px]">Encryption</h1>
         </div>
-      </div>
+      </motion.div>
 
 
-      <div className='absolute z-[20] bottom-[20%] md:bottom-[10%] px-[5px]'>
+      <motion.div
+        className='absolute z-[20] bottom-[20%] md:bottom-[10%] px-[5px]'
+      >
         <div className='cursive text-lg sm:text-[20px] font-medium text-center text-gray-300'>
           Secure your data with end-to-end encryption
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   )
 }
 
