@@ -1,28 +1,17 @@
-import Image from 'next/image';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import Link from 'next/link';
 import Sidebar from '../sub/Sidebar';
+import Logo from '../sub/Logo';
 
 const Header = () => {
   return (
     <header
-      className='w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 lg:px-10'
+      className='w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] 
+      backdrop-blur-md z-50 px-[15px] lg:px-10'
     >
       <div className='w-full h-full flex flex-row items-center justify-between m-auto px-[10px]'>
-        <a href='#about-me' className='h-auto w-auto flex flex-row items-center'>
-          <Image
-            src="/NavLogo.png"
-            alt="logo"
-            width={70}
-            height={70}
-            className='cursor-pointer lg:hover:animate-spin'
-          />
-
-          <span className='font-bold ml-[10px] text-gray-300 lg:hover:text-[#971bc8] transition-all'>
-            IK Dev
-          </span>
-        </a>
+        <Logo />
 
         <div className='w-[500px] h-full hidden lg:flex flex-row justify-center items-center md:mr-[20px]'>
           <div className='w-full h-auto flex justify-between border border-[#7042f861] bg-[#0300145e] mr-[15px] 
@@ -46,7 +35,8 @@ const Header = () => {
           </Link>
           <Link href="mailto:ivan.korobka.work@gmail.com">
             <IoIosMail
-              className="text-[24px] text-white lg:hover:text-[#971bc8] transition-all border border-white rounded-lg"
+              className="text-[24px] text-white lg:hover:text-[#971bc8] transition-all 
+              border border-white rounded-lg lg:hover:border-[#971bc8]"
             />
           </Link>
         </div>
