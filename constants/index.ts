@@ -256,3 +256,89 @@ export const Other_skill = [
     height: 60,
   },
 ];
+
+export const ProjectsInfo = [
+  {
+    name: "Grilla Pizza",
+    description: `A multi-page React app project - copy of web-site grilla.kr.ua, made with functional 
+      components, adapted for all standard mobile device screen sizes. Used technologies: 
+      React, Redux toolkit, Firebase, SCSS`,
+    img: "/pizza.jpg",
+    websiteLink: "https://bambuuk.github.io/pizza/",
+  },
+  {
+    name: "NovaPoshta Tracking",
+    description: `With this multi-page app you can tracking parcels and looking post offices info up. 
+    Adapted for all standard mobile device screen sizes. Instruments: React, Redux-toolkit, 
+    RTk-query, TailwindCSS, NovaPoshta API`,
+    img: "/nova-poshta.png",
+    websiteLink: "https://bambuuk.github.io/nova-poshta-tracking",
+  },
+  {
+    name: "Coffee shop",
+    description: `This SPA was made with functional components, adapted for all standard 
+    mobile device screen sizes. Features dynamically and static rendered elements.`,
+    img: "/coffee-shop.png",
+    websiteLink: "https://bambuuk.github.io/coffee-shop/",
+  },
+  {
+    name: "Mountains Photos",
+    description: `This SPA was created to showcase various mountain photos and allow 
+    users to add comments for each of them. It is adapted for all standard mobile device 
+    screen sizes. Tools: React, RTK query, Styled-components`,
+    img: "/mountains-photos.png",
+    websiteLink: "https://mountains-photos.netlify.app/",
+  },
+  {
+    name: "Generative AI",
+    description: `This landing page was developed to highlight Generative AI solutions 
+    tailored for both businesses and individuals. Tools: TS, React, Swiper, Formik`,
+    img: "/generative-ai.png",
+    websiteLink: "https://generative-ai-copyright.netlify.app/",
+  },
+  {
+    name: "Future Invest",
+    description: `This landing page was made for practicing MaterialUI. For it I used these 
+    instruments: React, MaterialUI. Adapted for all standard mobile device screen sizes.`,
+    img: "/future-invest.png",
+    websiteLink: "https://bambuuk.github.io/future-invest/",
+  },
+  {
+    name: "RSMOTO School",
+    description: `It's a landing page was made with React.js, TailwindCSS, AOS. 
+    This SPA was adapted for all standard mobile device screen sizes.`,
+    img: "/rsmoto-school.png",
+    websiteLink: "https://bambuuk.github.io/rsmoto-school/",
+  },
+  {
+    name: "Travel site",
+    description: `This landing page was made for practicing TailwindCSS framework. For it I 
+    used these instruments: React, TailwindCSS, Swiper.js, React-icons. Adapted for all 
+    standard mobile device screen sizes.`,
+    img: "/travel.png",
+    websiteLink: "https://bambuuk.github.io/practice-tailwindcss-2/",
+  },
+  {
+    name: "Simple Messenger",
+    description: `It's a React SPA for speaking with other people in room (some little messenger). 
+    Made with functional components, adapted for all standard mobile device screen sizes. 
+    For this project I used Authorization with Google and Firestore Database with React.`,
+    img: "/chat-app-firebase.png",
+    websiteLink: "https://bambuuk.github.io/chat-app-firebase/",
+  },
+  {
+    name: "Hero admin panel",
+    description: `This SPA was made with functional components, React, 
+    Redux-toolkit, RTk-query, REST API technologies. In this project you can add, 
+    delete, filter heroes.`,
+    img: "/heroes-list.png",
+    websiteLink: "https://bambuuk.github.io/heroes-list-on-redux-toolkit/",
+  },
+  {
+    name: "UBER",
+    description: `This SPA was made with functional components, adapted for all 
+    standard mobile device screen sizes. Features dynamically and static rendered elements.`,
+    img: "/uber.png",
+    websiteLink: "https://bambuuk.github.io/uber-adaptiv-and-js/",
+  },
+];
