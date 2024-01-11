@@ -9,10 +9,10 @@ const Encryption = () => {
     <motion.section
       initial="hidden"
       animate="visible"
-      variants={slideInFromLeft(0.5)}
+      variants={slideInFromLeft(0.6)}
       className='flex flex-row relative items-center justify-center w-full min-h-screen h-full'
     >
-      <motion.div
+      <div
         className='absolute w-auto h-auto top-[20%] sm:top-[15%] md:top-[10%] z-[5]'
       >
         <div
@@ -25,9 +25,9 @@ const Encryption = () => {
           </span>
           Security
         </div>
-      </motion.div>
+      </div>
 
-      <motion.div
+      <div
         className='w-full h-full flex items-start justify-center absolute top-[50%] translate-y-[-50%]'
       >
         <video
@@ -39,9 +39,9 @@ const Encryption = () => {
           className='w-full h-full bg-transparent'
           src="/encryption.webm"
         />
-      </motion.div>
+      </div>
 
-      <motion.div
+      <div
         className="flex flex-col items-center justify-center top-[50%] translate-y-[-50%] absolute z-[20] w-auto h-auto"
       >
         <div className="flex flex-col items-center group cursor-pointer w-auto h-auto">
@@ -64,16 +64,16 @@ const Encryption = () => {
         <div className="Welcome-box px-[15px] py-[4px] z-[20] brder my-[20px] border-[#7042f88b] opacity-[0.9]">
           <h1 className="Welcome-text text-[12px]">Encryption</h1>
         </div>
-      </motion.div>
+      </div>
 
 
-      <motion.div
+      <div
         className='absolute z-[20] bottom-[20%] md:bottom-[10%] px-[5px]'
       >
         <div className='cursive text-lg sm:text-[20px] font-medium text-center text-gray-300'>
           Secure your data with end-to-end encryption
         </div>
-      </motion.div>
+      </div>
     </motion.section>
   )
 }

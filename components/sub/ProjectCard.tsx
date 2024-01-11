@@ -19,7 +19,7 @@ const ProjectCard = ({ src, title, description, websiteLink }: ProjectCardProps)
     visible: { opacity: 1 }
   }
 
-  const animationDelay = 0.3;
+  const animationDelay = 0.4;
 
   return (
     <motion.div
@@ -27,7 +27,7 @@ const ProjectCard = ({ src, title, description, websiteLink }: ProjectCardProps)
       initial="hidden"
       variants={imageVariants}
       animate={inView ? 'visible' : 'hidden'}
-      transition={{ delay: animationDelay, duration: 0.7 }}
+      transition={{ delay: animationDelay, duration: 1 }}
       className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] z-20"
     >
       <Link href={websiteLink} className="cursor-pointer" target="_blank">
